@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+main .container {
+    padding-top: 15vw;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+main .container a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #095672;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main .container a:hover {
+    background-color: #08465b;
+}
+

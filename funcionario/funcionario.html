@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Funcionários</h1>
+        <div class="container">
+            <a href="../home/index.html">Home</a>
+            <a href="../cliente/cliente.html">Clientes</a>
+            <a href="../funcionario/funcionario.html">Funcionários</a>
+            <a href="../produtos/produtos.html">Produtos</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <container class="cadastro">
+            <button id="abrirModal">Novo Funcionário</button>
+        </container>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um funcionário</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="CPF" name="CPF">
+                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Telefone" name="telefone">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="text" placeholder="Ações" name="acoes">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <container class="apresentarfuncionarios">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td>328.420.408-07</td>
+                    <td>lucas@gmail.com</td>
+                    <td>19991237-2842</td>
+                    <td>Rua das Rosas, 635</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paiva</td>
+                    <td>509.335.548-38</td>
+                    <td>paiva@gmail.com</td>
+                    <td>1991257-3674</td>
+                    <td>Rua das Plantas, 857</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wellington</td>
+                    <td>643.456.789-10</td>
+                    <td>wellington@gmail.com</td>
+                    <td>1999833-2930</td>
+                    <td>Rua das Orquídeas, 489</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Bia Vizeu
+    </footer>
+</body>
+<script src="funcionario.js"></script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Produtos</h1>
+        <div class="container">
+            <a href="../home/index.html">Home</a>
+            <a href="../cliente/cliente.html">Clientes</a>
+            <a href="../funcionario/funcionario.html">Funcionários</a>
+            <a href="../produtos/produtos.html">Produtos</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <container class="cadastro">
+            <button id="abrirModal">Novo Produto</button>
+        </container>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um produto</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="Descrição" name="descricao">
+                <input type="text" placeholder="Va. Custo" name="va.custo">
+                <input type="text" placeholder="Va. Final" name="va.final">
+                <input type="text" placeholder="Ações" name="acoes">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <container class="apresentarprodutos">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Va. Custo</th>
+                    <th>Va. Final</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Arroz Branco</td>
+                    <td>R$ 2,00</td>
+                    <td>R$ 10,00</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feijão</td>
+                    <td>Feijão Preto</td>
+                    <td>R$ 10,00</td>
+                    <td>R$ 25,00</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Bia Vizeu
+    </footer>
+</body>
+<script src="produtos.js"></script>
+</html>

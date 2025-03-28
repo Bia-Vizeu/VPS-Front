@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Clientes</h1>
+        <div class="container">
+            <a href="../home/index.html">Home</a>
+            <a href="../cliente/cliente.html">Clientes</a>
+            <a href="../funcionario/funcionario.html">Funcionários</a>
+            <a href="../produtos/produtos.html">Produtos</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <container class="cadastro">
+            <button id="abrirModal">Novo Cliente</button>
+        </container>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um cliente</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="CPF" name="CPF">
+                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="text" placeholder="Ações" name="acoes">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        <container class="apresentarclientes">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Bia</td>
+                    <td>478.420.508-05</td>
+                    <td>bia.vizeu@gmail.com</td>
+                    <td>Rua das Flores, 123</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laila</td>
+                    <td>509.325.508-08</td>
+                    <td>laila.casadei@gmail.com</td>
+                    <td>Rua das Ondas, 456</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Eloá</td>
+                    <td>123.456.789-10</td>
+                    <td>eloa.florencio@gmail.com</td>
+                    <td>Rua das Pedras, 789</td>
+                    <td>
+                        <a href="editar.html">Editar</a>
+                        <a href="excluir.html">Excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Bia Vizeu
+    </footer>
+</body>
+<script src="cliente.js"></script>
+</html>
